@@ -1,49 +1,136 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>ch5.ca</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CH5 Consulting Inc. | DevOps Consulting Services</title>
+    <meta name="description" content="CH5 Consulting Inc. helps startups and enterprises scale their DevOps workflows, infrastructure automation, CI/CD pipelines, and cloud platforms." />
+    <meta name="keywords" content="DevOps, Consulting, CI/CD, Infrastructure Automation, Kubernetes, Cloud Optimization, CH5 Consulting, Canada, Terraform, Ansible, Jenkins, GitOps" />
+    <meta name="author" content="CH5 Consulting Inc." />
+    <link rel="canonical" href="https://ch5.ca/" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                blue: '#1E3A8A',
+                red: '#DC2626',
+                light: '#F9FAFB',
+                dark: '#111827',
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="icon" href="assets/ch5_favicon.png" type="image/png" />
+  </head>
+  <body class="bg-brand-light text-brand-dark font-sans">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>ch5.ca</h1>
-				<p>We provide Technical consulting services.<br />
-				Please send us an email for inquiries.</p>
-			</header>
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex flex-col items-center space-y-1">
+          <img src="assets/ch5_logo_cropped_128x128.png" alt="ch5 consulting logo" class="h-20" />
+        </div>
+        <nav class="space-x-6">
+          <a href="#services" class="text-gray-700 hover:text-brand-blue">Services</a>
+          <a href="#about" class="text-gray-700 hover:text-brand-blue">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-brand-blue">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-		<!-- Signup Form -->
-		<div style="display:none">
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
-		</div>
-		<div>
-			<a href="mailto:info@ch5.ca?Subject=Inquiry" target="_top">Contact us</a>
-		</div>
+    <!-- Hero Section (Image Only) -->
+    <section class="bg-[#002848] text-white text-center py-8" >
+      <div class="max-w-7xl mx-auto px-4">
+        <img src="assets/devops_done_right.png" alt="DevOps Consulting Banner" class="mx-auto rounded-lg shadow-lg w-full max-w-5xl" />
+      </div>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/ch5ca" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:info@ch5.ca?Subject=Inquiry" target="_top" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; ch5.ca Inc.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+    <!-- Services -->
+    <section id="services" class="py-16 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Services Offered</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="text-xl font-semibold mb-2">CI/CD Automation</h3>
+            <ul class="list-disc ml-6 space-y-1 text-gray-700">
+              <li>GitHub Actions, Jenkins, Buildkite pipelines</li>
+              <li>GitOps and automated releases</li>
+              <li>Optimized pipelines for faster builds</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Containerization & Kubernetes</h3>
+            <ul class="list-disc ml-6 space-y-1 text-gray-700">
+              <li>Docker, Kubernetes, EKS, Helm, Kustomize, Skaffold</li>
+              <li>Secure orchestration at scale</li>
+              <li>Migration & onboarding support</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Infrastructure Automation</h3>
+            <ul class="list-disc ml-6 space-y-1 text-gray-700">
+              <li>Terraform, Ansible, Packer</li>
+              <li>Automated image builds and config management</li>
+              <li>Legacy system migration</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Cloud & Cost Optimization</h3>
+            <ul class="list-disc ml-6 space-y-1 text-gray-700">
+              <li>AWS migrations & multi-account setups</li>
+              <li>EC2 to Graviton transitions</li>
+              <li>Spot instance automation</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Observability & Security</h3>
+            <ul class="list-disc ml-6 space-y-1 text-gray-700">
+              <li>Prometheus, Grafana, CloudWatch, OpenTelemetry</li>
+              <li>PKI and TLS certificate automation</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Linux Automation & Support</h3>
+            <ul class="list-disc ml-6 space-y-1 text-gray-700">
+              <li>Automated provisioning with Ansible</li>
+              <li>Server hardening & health checks</li>
+              <li>Custom Linux automation solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+    <!-- About -->
+    <section id="about" class="bg-gray-100 py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">About CH5 Consulting Inc.</h2>
+        <p class="text-lg text-gray-700">
+          DevOps consultants with 15+ years of experience across cloud, containers, Linux systems, and enterprise automation. CH5 helps teams scale, secure, and ship faster with modern DevOps practices.
+        </p>
+      </div>
+    </section>
 
-	</body>
+    <!-- Contact -->
+    <section id="contact" class="bg-white py-16 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+    <a href="mailto:info@ch5.ca" class="inline-block bg-brand-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-red transition mb-4">Email</a>
+    <br />
+    <a href="https://calendly.com/ch5-devops/30min" target="_blank" rel="noopener" class="inline-block bg-brand-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-red transition mb-4">Schedule a Meeting</a>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white text-center py-6">
+      <p>&copy; 2025 CH5 Consulting Inc. All rights reserved.</p>
+    </footer>
+
+  </body>
 </html>
